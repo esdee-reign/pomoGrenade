@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>💣pomoGrenade</title>
+</head>
+<body>
+    
+
+    
+
+    <header>
+        <div id="logo">{/} pomoGrenade - Boom your productivity {/}</div>
+    </header>
+
+    <div id="blast">
+        <lottie-player 
+            src="https://assets10.lottiefiles.com/packages/lf20_1Urv0u.json"  
+            background="transparent"  
+            speed="0.8"  
+            style="width: 800px; height: 800px;"  
+            loop
+            count=3 autoplay>
+        </lottie-player>
+    </div>
+
+    <main id="timer-body">
+        <section class="timer-section">
+            <div id="timer">
+                <div id="minutes">10</div>
+                <div id="colon">
+                    <div class="col" id="col-1"></div>
+                    <div class="col" id="col-2"></div>
+                </div>
+                <div id="seconds">00</div>
+            </div>
+        </section>
+
+        <section class="controlBtn">
+            <div onclick="beginCountdown()" id="startStopBtn">
+                <div id="startStop">START</div>
+            </div>
+        </section>
+
+
+        <section class="btn-group">
+            <div id="btns">
+                <div onclick="setTime(5)" class="timer-button" id="5-minutes-btn">
+                    5 MINUTES
+                </div>
+                <div onclick="setTime(10)" class="timer-button" id="10-minutes-btn">
+                    10 MINUTES
+                </div>
+                <div onclick="setTime(25)" class="timer-button" id="25-minutes-btn">
+                    25 MINUTES
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
